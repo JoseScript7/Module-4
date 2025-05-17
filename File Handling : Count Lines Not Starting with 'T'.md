@@ -13,25 +13,20 @@ To write a Python program that counts the number of lines in a text file `story.
 
 ## 🧾 Program
 ```
-lines = [
-    "The sun rises in the east.",
-    "Tomorrow will be a great day.",
-    "Birds are singing.",
-    "Trees are green.",
-    "Today is sunny.",
-    "Grass is wet with dew."
-]
+def returnSum(myDict):
+    final=0
+    for i in myDict.values():
+        final+=i
+    return final
+#driver functions
 
-count = 0
-for line in lines:
-    if not line.startswith('T'):
-        count += 1
-
-print(count)
+myDict = {'a': 100, 'b': 200, 'c': 300}
+print("Sum :",returnSum(myDict))
 ```
 
 ## Output
-![image](https://github.com/user-attachments/assets/4ee81a30-a5f6-4ec4-8aac-0ad4004fe340)
+![image](https://github.com/user-attachments/assets/9c43f0b3-610b-4d13-9d7b-ff69fae8095b)
+
 
 ## Result
 The Python program to count lines not starting with 'T' in story.txt has been executed successfully, and the output has been verified.
